@@ -9,17 +9,18 @@
 <body>
     <section id="mosaic">
         <div class="box">
-                <div class="image">
-            <a href="#" class="js-video-button" data-video-id='79690528'>
-                    <img src="../assets/img/maps/lituania/mapLi01.png">
-                    </a>
-                </div>  
+            <!-- 
+           <div class="image">
+            <a href="#" class="" >
+                <img src="../assets/img/maps/lituania/mapLi01.png">
+                </a>
+            </div>  
             
             <div class="image">
                 <a href="../maps.php">
                     <img src="../assets/img/maps/lituania/mapLi02.png">
                 </a>
-            </div><!-- 
+            </div> 
             <div class="image">
                 <a href="../maps.php">
                     <img src="../assets/img/maps/lituania/mapLi03.png">
@@ -199,42 +200,42 @@
                 <a href="../maps.php">
                     <img src="../assets/img/maps/suecia/mapSe02.png">
                 </a>
-            </div>
+            </div>-->
             <div class="image">
-                <a href="../maps.php">
-                    <img src="../assets/img/maps/suecia/mapSe03.png">
-                </a>
-            </div>
-            <div class="image">
-                <a href="../maps.php">
-                    <img src="../assets/img/maps/suecia/mapSe05.png">
-                </a>
-            </div> -->
-            <div class="image">
-                <a href="write.php">
+                <a href="suecia-one-write.php">
                     <img src="../assets/img/maps/suecia/mapSe01.png">
                 </a>
             </div>   
+            <div class="image">
+                <a href="#" id="btn-modal">
+                    <img src="../assets/img/maps/suecia/mapSe03.png">
+                </a>
+            </div>
             <div class="image">
                 <a href="audio.php">
                     <img src="../assets/img/maps/suecia/mapSe04.png">
                 </a>
             </div>
             <div class="image">
+                <a href="suecia-five-text.php">
+                    <img src="../assets/img/maps/suecia/mapSe05.png">
+                </a>
+            </div> 
+            <div class="image">
                 <a href="suecia-six-image.php">
                     <img src="../assets/img/maps/suecia/mapSe06.png">
                 </a>
             </div>
-           <!--  <div class="image">
-                <a href="../maps.php">
+            <div class="image">
+                <a href="suecia-seven-audio.php">
                     <img src="../assets/img/maps/suecia/mapSe07.png">
                 </a>
             </div>
             <div class="image">
-                <a href="../maps.php">
+                <a href="suecia-nine-text.php">
                     <img src="../assets/img/maps/suecia/mapSe09.png">
                 </a>
-            </div>
+            </div><!-- 
             <div class="image">
                 <a href="../maps.php">
                     <img src="../assets/img/maps/suecia/mapSe10.png">
@@ -286,6 +287,17 @@
                 </a>
             </div>-->
         </div> 
+<!--         MODAL SUECIA 3 -->
+        <div id="modal">
+            <div id="modal-mosaic">
+                <div id="box-modal">
+                    <div id="box-close">
+                        <span id="close-modal-se03"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                    </div>
+                    <iframe src="https://player.vimeo.com/video/    95312344" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </div>
+        </div> 
     </section>
 </body>
 <?php include('includes/scripts.inc'); ?>
@@ -300,5 +312,22 @@
 </script> -->
 <script src="../vendors/modal-video/js/modal-video.min.js"></script>
 <script>
-    $(".js-video-button").modalVideo({channel:'vimeo'});
-</script>
+// MODAL
+var btn = document.getElementById("btn-modal");
+var close = document.getElementById("box-modal");
+var modal = document.getElementById("modal"); 
+var modalcontent = document.getElementById("modal-mosaic"); 
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+close.onclick = function() {
+    window.location.href = "mosaic.php";
+}
+window.onclick = function(event) {
+    if (event.target == modalcontent) {
+        window.location.href = "mosaic.php";
+    }
+}
+</script> 
+

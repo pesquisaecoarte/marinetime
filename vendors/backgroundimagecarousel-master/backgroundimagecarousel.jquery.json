@@ -1,0 +1,25 @@
+{
+  "name": "backgroundimagecarousel",
+  "title": "Background Image Carousel",
+  "description": "A large background images carousel to show large images using the versatility of CSS's background property. The carousel is adaptive to different screen sizes, plus swipe friendly to navigate.",
+  "keywords": ["carousel", "slideshow", "background", "gallery"],
+  "version": "1.1.0",
+  "author": {
+    "name": "Dynamic Drive",
+    "email" : "ddrivehelp@gmail.com",
+		"url": "http://www.dynamicdrive.com"
+  },
+  "licenses": [
+    {
+      "type": "Freeware",
+      "url": "http://www.dynamicdrive.com/notice.htm"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=1.7"
+  },
+  "homepage": "http://www.dynamicdrive.com/dynamicindex14/bgcarousel.htm",
+  "docs": "http://www.dynamicdrive.com/dynamicindex14/bgcarousel.htm",
+  "demo": "http://www.dynamicdrive.com/dynamicindex14/bgcarousel.htm",
+  "download": "http://www.dynamicdrive.com/dynamicindex14/bgcarousel.htm"
+}

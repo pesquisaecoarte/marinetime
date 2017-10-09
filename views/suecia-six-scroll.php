@@ -1,59 +1,45 @@
 <!DOCTYPE html>
-<html>
 <head>
     <title>Suécia</title>    
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="../vendors/Slides-SlidesJS-3/examples/standard/css/example.css">
+  <link rel="stylesheet" type="text/css" href="../vendors/backgroundimagecarousel-master/style.css">
     <?php include('includes/head.inc'); ?>
 </head>
 <body>
-<section>
-<div class="container">  
-  <div id="slides">
-    <img src="">
-    <img src="../assets/img/suecia_line6/kb11_02156.jpg">
-    <img src="../assets/img/suecia_line6/kb11_02160.jpg">
-    <img src="../assets/img/suecia_line6/kb11_02176.jpg">
-    <img src="../assets/img/suecia_line6/kb11_02213.jpg">
-      <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
-      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
-  </div>
+<div id="mybgcarousel" class="bgcarousel">  
 </div>
 
-    <div class="circles-center">
-        <a href="mosaic.php" class="circle circle-back"></a>
-    </div>
+<div class="circles-center">
+<a href="mosaic.php" class="circle circle-back"></a>
+<a href="suecia-five-scroll.php" class="circle"></a>
+</div> 
 
-
-  </section>
 </body>
-  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script src="../vendors/Slides-SlidesJS-3/source/jquery.slides.min.js"></script>
-  <style>
-    /* Prevents slides from flashing */
-    #slides {
-      display:none;
-    }
-  </style>
-  <script>
-    $(function(){
-      $("#slides").slidesjs({
-        width: 940,
-        height: 528
-      });
-    });
-    $(function(){
-  $("#slides").slidesjs({
-    navigation: {
-      active: true,
-        // [boolean] Generates next and previous buttons.
-        // You can set to false and use your own buttons.
-        // User defined buttons must have the following:
-        // previous button: class="slidesjs-previous slidesjs-navigation"
-        // next button: class="slidesjs-next slidesjs-navigation"
-      effect: "slide"
-        // [string] Can be either "slide" or "fade".
-    }
-  });
-});
-  </script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../vendors/backgroundimagecarousel-master/jquery.velocity.min.js"></script>
+<script type="text/javascript" src="../vendors/backgroundimagecarousel-master/jquery.touchSwipe.min.js"></script>
+
+<script src="../vendors/backgroundimagecarousel-master/bgcarousel.js" type="text/javascript">
+</script>
+
+<script type="text/javascript">
+
+var firstbgcarousel=new bgCarousel({
+  wrapperid: 'mybgcarousel', //ID of blank DIV on page to house carousel
+  imagearray: [
+    ['../assets/img/suecia06/kb11_02132.jpg'], 
+    ['../assets/img/suecia06/kb11_02155.jpg'], 
+    ['../assets/img/suecia06/kb11_02156.jpg'], 
+    ['../assets/img/suecia06/kb11_02160.jpg'], 
+    ['../assets/img/suecia06/kb11_02176.jpg'], 
+    ['../assets/img/suecia06/kb11_02213.jpg']
+
+  ],
+  displaymode: {type:'auto', pause:2000, cycles:200, stoponclick:false, pauseonmouseover:true},
+  navbuttons: ['left.gif', 'right.gif', 'up.gif', 'down.gif'], // path to nav images
+  activeslideclass: 'selectedslide', // CSS class that gets added to currently shown DIV slide
+  orientation: 'h', //Valid values: "h" or "v"
+  persist: true, //remember last viewed slide and recall within same session?
+  slideduration: 500 //transition duration (milliseconds)
+})
+
+</script> 
