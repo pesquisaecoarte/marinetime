@@ -47,8 +47,8 @@
 @media screen and (min-aspect-ratio: 1885/1000) {
 	.static,
 	.points {
-		width: auto;
-		height: calc(100vh - 6em);
+		width: 100%;
+		max-height: 100vh;
 		min-height: 500px;
 	}
 }
