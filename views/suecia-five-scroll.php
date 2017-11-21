@@ -24,12 +24,10 @@
 
 var firstbgcarousel=new bgCarousel({
   wrapperid: 'mybgcarousel', //ID of blank DIV on page to house carousel
-  imagearray: [ 
-    ['../assets/img/suecia06/kb11_02155.jpg'], 
-    ['../assets/img/suecia06/kb11_02156.jpg'], 
-    ['../assets/img/suecia06/kb11_02160.jpg'], 
-    ['../assets/img/suecia06/kb11_02176.jpg'], 
-    ['../assets/img/suecia06/kb11_02213.jpg']
+  imagearray: [
+    ['../assets/img/suecia05/kb11_02162.jpg'], 
+    ['../assets/img/suecia05/kb11_02164.jpg'], 
+    ['../assets/img/suecia05/kb11_02176.jpg']
 
   ],
   displaymode: {type:'auto', pause:2000, cycles:200, stoponclick:false, pauseonmouseover:true},
