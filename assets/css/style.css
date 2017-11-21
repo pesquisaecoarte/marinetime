@@ -16,173 +16,58 @@ html, body {
     overflow-x: hidden; 
 }
 
-.box {
-    width: 100%;
-    min-height: 100vh;
-    display: inline-block;
-    background-color: #000;
-    margin: auto;
-}
-
 iframe {
     width: 100%;
     overflow: none;
     height: 100vh;
 }
 
-.section-one {
-    width: 100%;
-    min-height: 100vh;
-    background-color: #2c2d31;
-    /*background-image: url('../img/img1.jpg');*/
-    background-position: center;
-    background-size: cover;
-}
-
 a {
     margin: 0;
-    width: 0;
-    height: 0;
-}
-
-.image {
-    display: inline-block;
-    text-align: center;
-    margin: auto;
-}
-
-.image img {
-    width: 186px;
-    margin: auto;
-    padding: 2px;
-}
-
-
-.image img:hover {
-    opacity: 0.5;
-}
-
-.title p {
-    color: #000;
-    font-size: 50px;
-    text-align: center;
-    padding: 10px;
-}
-
-.subtitle p {
-    color: #eee;
-    font-size: 1.4em;
-    text-align: center;
-}
-
-#changethewords {
-    text-align: center;
-}
-
-#changethewords p {
-    color: #000;
-    font-size: 1.5em;
-    text-align: center;
-}
-
-/* INDEX */
-.button-start {
-    width: 150px;
-    height: 50px;
-    background-color: #000;
-    border-radius: 5px;
-    border: none;
-    color: #FFF;
-    position: absolute;
-    top: 90%;
-    left: 90%;
-    margin-top: -60px;
-    margin-left: -200px; 
-}
-
-button {
-    cursor: pointer;
-}
-
-/*HEADER*/
-header input {
-    float: right;
-    padding: 10px;
-    width: 200px;
-    border: none;
-}
-
-.menu-toggle {
-    width: 40px;
-    height: 30px;
-    float: left;
-    position: relative;
-    text-indent: -9999px;
-    cursor: pointer;
-    overflow: hidden;
-    background-color: yellow;
-    margin-left: 240px;
-    z-index: 1;
-}
-
-.menu-toggle:before {
-    content: "";
-    display: block;
-    margin: 7px auto;
-    width: 70%;
-    height: 0.25em;
-    background: #f49c14;
-    box-shadow: 0 .45em 0 0 #f49c14,
-    0 .9em 0 0 #f49c14;
-}
-
-.menu-toggle  .menu-active {
-    background-color: red;
-}
-
-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 220px;
-    height: 100%;
-    padding-top: 10px;
-    background-color: #ecf0f1;
-    box-shadow: inset -5px -10px 10px 0 rgba(0,0,0,.3);
-}
-
-menu li a {
-    display: block;
-    border-bottom: 1px solid pink;
-    margin: 0 10px;
-    padding: 10px;
-    color #FFF;
+    width: 0;   
     text-decoration: none;
 }
 
-menu li a:hover {
+/*INDEX PÁGINA INICIAL */
 
+.section-one {
+    background-color: #2c2d31;
+    background-image: url('../img/image-start.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    position: fixed;
+    width: 100%;
 }
 
-menu {
-    transform: translateX(-220px); /*escondendo o menu*/
-    /*transition: all .25s linear;*/
+.title {
+    background-color: rgba(0,0,0,0.8);
+    height: 7em;
+    margin-top: 10%;
+    padding-left: 6%;
+    width: 70%;
 }
 
-header, .main {
-    transform: translateX(0);
-    /*transition: all .25s linear;*/
+.title p {
+    color: #CC1517;
+    font-size: 5em;
 }
 
-.menu-active menu {
-    transform: translateX(0);
+.button-start {
+    background-color: rgba(0,0,0,0.8);
+    border: none;
+    color: #FFF;
+    font-size: 1.7em;
+    height: 50px;
+    left: 90%;
+    margin-left: -200px; 
+    margin-top: -60px;
+    position: absolute;
+    top: 90%;
+    width: 150px;
 }
 
-.menu-active header,
-.menu-active .main {
-    transform: translateX(220px);
-}
+/* FIM PÁGINA INICIAL */
 
 /*ABOUT*/
 .section-about {
@@ -193,7 +78,10 @@ header, .main {
     width: 100%;
 }
 
-/*WRITE*/
+/* END ABOUT */
+
+/* SUECIA ONE */
+
 .write {
     -webkit-align-items: center;
     -webkit-justify-content: center;
@@ -216,6 +104,65 @@ header, .main {
     font-size: 2.5em;
 }
 
+/*CIRCLE SLIDE */
+.fc-slideshow img {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px; 
+}
+
+.container-circle {
+    background: none;
+    background-color: #000;
+}
+
+/* END SUECIA ONE*/
+
+.box {
+    background-color: #000;
+    display: inline-block;
+    min-height: 100vh;
+    text-align: center;
+    width: 100%;
+}
+
+.image {
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    width: 16.4%
+}
+
+.image img {
+    width: 100%;
+    margin: auto;
+    padding: 2px;
+}
+
+
+.image img:hover {
+    opacity: 0.5;
+}
+
+.subtitle p {
+    color: #eee;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+#changethewords {
+    text-align: center;
+}
+
+#changethewords p {
+    color: #000;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
 
 /*CIRCLE*/
 .circle-back {
@@ -274,19 +221,6 @@ audio {
     -webkit-justify-content: center;
     justify-content: center;
     text-align: center;
-}
-
-/*CIRCLE SLIDE */
-
-.fc-slideshow img {
-    border-radius: 50%;
-    width: 400px;
-    height: 400px;
-}
-
-.container-circle {
-    background: none;
-    background-color: #000;
 }
 
 /*SUECIA-SIX*/
@@ -356,10 +290,6 @@ div.bgcarousel div.slide div.desc {
 }
 
 /* MODAL Suécia 01  */
-
-#box-modal {
-   /* display: none;*/
-}
 
 #modal {
    display: none;
@@ -460,6 +390,38 @@ div.bgcarousel div.slide div.desc {
     color: #000;
 }
 
+.suecia-nine-image {
+    background-image: url('../img/suecia09/fundo.png');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.words div a {
+    color: #ff3333;
+    font-weight: bold;
+    font-size: 1.8em; 
+}
+
+.solitude {
+    padding-top: 20vh;
+    padding-right: 20vh;
+    float: right;
+}
+
+.wind {    
+    padding-top: 30vh;
+    padding-left: 20vh;
+    float: left;
+}
+
+.algae {
+    padding-top: 85vh;
+    padding-right: 20vh;
+    float: right;
+}
+
+
 #modal-mosaic {
     background-color: #000;
     margin: auto;
@@ -472,3 +434,120 @@ div.bgcarousel div.slide div.desc {
     align-items: center;
     justify-content: center;
 }
+
+
+/*SUECIA TWO 2*/
+
+.suecia-two-image {
+    background-image: url('../img/suecia02/kb11_m1429.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+
+/*NORUEGA TEN 10*/
+.body-timeline {
+    background-color: #778899;
+}
+
+.image-noruega, .step-368 {
+    width: 800px;
+    height: 800px;
+    background-position: center;
+    background-size: cover;
+}
+
+a.prev::after { color: red; }
+
+.step-1000 {
+    background-image: url('../img/noruega10/1000_steps.jpg');
+}
+
+.step-1500 {
+    background-image: url('../img/noruega10/1500_steps.jpg');
+}
+
+.step-2000 {    
+    background-image: url('../img/noruega10/2000-steps.jpg');
+}
+
+.step-2222 {
+    background-image: url('../img/noruega10/2222-steps.jpg');
+
+}
+
+.step-3500 {
+    background-image: url('../img/noruega10/3500-steps.jpg');
+
+}
+
+.step-3722 {
+    background-image: url('../img/noruega10/3722-steps.jpg');
+}
+
+.step-4000 {
+    background-image: url('../img/noruega10/4000-steps.jpg');
+}
+
+.step-853 {
+    background-image: url('../img/noruega10/853-steps.jpg');
+}
+
+.step-368 {
+    background-image: url('../img/noruega10/368-steps.jpg');    
+}
+
+.step-goind-down {
+    background-image: url('../img/noruega10/goind_down.jpg');
+}
+
+.cd-horizontal-timeline .events-content em {
+    color: #FFF;
+}
+
+.cd-horizontal-timeline .events-wrapper::before {
+    background-image: none;
+}
+
+.cd-horizontal-timeline .events-wrapper::after {
+    background-image: none;
+}
+
+.cd-horizontal-timeline .events-content h2 {
+    font-size: 4rem;
+}
+
+.cd-horizontal-timeline .events-content {
+    margin-top: 0.5em; /*margin entre titulo e linha do tempo*/
+}
+
+@media only screen and (min-width: 1100px) {
+    .cd-horizontal-timeline {
+        margin: 0;
+    }
+}
+
+.cd-horizontal-timeline .filling-line {
+    background-color: #CC1517;
+}
+
+.no-touch .cd-horizontal-timeline .events a:hover::after {
+  background-color: #CC1517;
+  border-color: #CC1517;
+}
+.cd-horizontal-timeline .events a.selected {
+  pointer-events: none;
+}
+.cd-horizontal-timeline .events a.selected::after {
+  background-color: #CC1517;
+  border-color: #CC1517;
+}
+.cd-horizontal-timeline .events a.older-event::after {
+  border-color: #CC1517;
+}
+.no-touch .cd-timeline-navigation a:hover {
+  border-color: #CC1517;
+}
+
+/*NORUEGA END */
